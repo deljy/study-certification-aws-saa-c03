@@ -12,4 +12,4 @@ EBS Snapshot makes a backup (snapshot) of your EBS volume at a point in time
 - 
 
 #### imgs
-- 
+![your-img-name](your/image/path)
