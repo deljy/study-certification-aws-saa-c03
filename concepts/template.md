@@ -5,7 +5,8 @@ short explanation comes here
 - 
 
 #### Terms
-- 
+- [displayed-link-name][your-link-name]
 
-#### imgs
+#### References
+[your-link-name]: your/file/path
 ![your-img-name](your/image/path)

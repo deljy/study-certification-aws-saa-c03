@@ -13,7 +13,7 @@ AMI are a customisation of an EC2 instance as well as container images
     - 3. build an AMI — this will also create EBS snapshots
     - 4. launch instances from other AMIs.
 - when you launch ec2 instances with ami, you can add more userdata (obviously)
-- [Recycle bin](./recycle-bin.md)
+- [Recycle bin](../recycle-bin.md)
 
 #### Terms
 - 

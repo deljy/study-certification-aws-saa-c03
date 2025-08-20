@@ -10,6 +10,16 @@ Feel free to explore and contribute if you find useful insights!
 ---
 Good luck with your exam preparation! 🚀
 
+## Directory Structure
+
+- **`concepts/`** - Core AWS concepts, services, and architectural patterns organized by topic
+- **`cdk-work/`** - AWS CDK projects and infrastructure as code examples
+- **`notes/`** - General study notes, quick references, and personal insights
+- **`quizzes/`** - Practice questions, mock exams, and quiz results
+- **`scripts/`** - Utility scripts for automation and study aids
+- **`static/`** - Images, diagrams, and other static resources
+- **`.amazonq/`** - Amazon Q configuration and coding standards
+
 ### Copyright Notice
 
 This repository and all its contents are the intellectual property of the owner of [deljy](https://github.com/deljy) and kim-juyeon-dc's main user accounts, who represent the same individual.
