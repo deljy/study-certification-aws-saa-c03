@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Generate date in dd/mm/yyyy format
+DATE_VALUE=$(date +"%d/%m/%Y")
+
+# Replace slashes with dashes for branch name (git doesn't like slashes)
+BRANCH_NAME=$(echo $DATE_VALUE | sed 's/\//-/g')
+
+echo "Creating commit with date: $DATE_VALUE"
+echo "Branch name: $BRANCH_NAME"
+
+# Checkout branch
+git checkout -b $BRANCH_NAME
