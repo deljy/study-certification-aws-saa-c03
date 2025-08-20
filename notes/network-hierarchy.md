@@ -1,0 +1,1 @@
+region > AZs > data center > rack > server > resources like ec2
