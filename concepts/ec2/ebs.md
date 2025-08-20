@@ -1,5 +1,5 @@
 ### Elastic Block Store(EBS)
-EBS is a network drive you can attach to your instances while they run, then it will allow the instance to persist data even after their termination
+EBS is a **network drive** you can attach to your instances while they run, then it will allow the instance to persist data even after their termination
 
 #### Analogy
 - think of them as a USB stick
@@ -8,10 +8,14 @@ EBS is a network drive you can attach to your instances while they run, then it 
 - they're bound to a specific AZ as well as ENI or EC2
 - they can only mounted to one instance at a time (at the CCP level)
 - they can be attached to one instances at a time like "ebs * - 1 ec2"
+    - with *[EBS multi-attach](./ebs-multi-attach.md)*, a EBSvolume can be attached to a multitude of EC2 instances in the same AZ
+    - *This feature is only available for [io1/io2 family EBS volumes](./ebs-volume-types.md)*
 - handy since it can be easily attached and detached to/from an ec2 instance
 - as you can see, you can decide whether not to delete ebs volume on termination of your instance (img1)
 - by default, the root EBS volume is deleted unlike any other attached ebs volumes
 - you can check ebs volumes attached to your instance by running the following commands
+
+
 ```bash
 lsblk
 
@@ -46,6 +50,7 @@ df -h
 - Firmware: Low-level software in hardware (like BIOS/UEFI) that starts your computer and loads the OS.
 - UEFI mode: Modern firmware mode that replaces BIOS; it supports faster boot, larger disks, and secure boot.
 - device name (like /dev/xvda or /dev/sdf): the internal identifier for the EBS volume inside the EC2 instance, shown in commands like lsblk.
+- network drive: a network drive is a storage device on a remote server that you access over a network, like a shared folder.
 
 
 #### imgs
