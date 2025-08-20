@@ -23,9 +23,9 @@
  * - Disaster recovery image creation
  */
 
-import * as cdk from 'aws-cdk-lib';
-import * as ec2 from 'aws-cdk-lib/aws-ec2';
-import * as cr from 'aws-cdk-lib/custom-resources';
+import * as cdk 	 from 'aws-cdk-lib';
+import * as ec2 	 from 'aws-cdk-lib/aws-ec2';
+import * as cr  	 from 'aws-cdk-lib/custom-resources';
 import { Construct } from 'constructs';
 
 export class GenerateAmiFromRunningInstancesStack extends cdk.Stack {

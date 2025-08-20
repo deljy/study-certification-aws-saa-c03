@@ -9,3 +9,9 @@ Feel free to explore and contribute if you find useful insights!
 
 ---
 Good luck with your exam preparation! 🚀
+
+### Copyright Notice
+
+This repository and all its contents are the intellectual property of the owner of [deljy](https://github.com/deljy) and kim-juyeon-dc's main user accounts, who represent the same individual.
+
+© 2025 All rights reserved. No part of this repository may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the copyright holder.
