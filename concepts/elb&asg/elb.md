@@ -18,9 +18,9 @@ short explanation comes here
 - [displayed-link-name][your-link-name]
 
 #### References
-[elb-alb]: ./elb-alb.md
-[elb-nlb]: ./elb-nlb.md
-[elb-glb]: ./elb-glb.md
+[elb-alb]: ./elb-types/elb-alb.md
+[elb-nlb]: ./elb-types/elb-nlb.md
+[elb-glb]: ./elb-types/elb-glb.md
 [sticky-session]: ./elb-features.md/sticky-session.md
 [cross-zone-load-balancing]: ./elb-features.md/cross-zone-load-balancing.md
 [ssl-certification]: ./elb-features.md/ssl-certification.md
