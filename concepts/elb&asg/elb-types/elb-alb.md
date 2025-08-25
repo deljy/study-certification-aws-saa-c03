@@ -16,7 +16,7 @@ a type of [ELB](elb).
     - can set up rules before forwarding traffic to downstream servers.
     - downstream servers will get request info with a "x-forwarded" prefix. e.g., "X-Forwarded-For", "X-Forwarded-Port", and "X-Forwarded-Proto".
 - SGs in its target group can have ALB's SG as their inbound rule's source.
-- 
+- ALBs in AWS don't directly support static IP addresses. instead, they utilise a generated domain name that resolves to the ALB's dynamically assigned IP addresses (fixed DNS name).
 
 #### Terms
 - [displayed-link-name][your-link-name]
