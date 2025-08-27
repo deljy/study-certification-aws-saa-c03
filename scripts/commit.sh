@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Get commit message
+COMMIT_MESSAGE=$1
+
 # Generate date in dd/mm/yyyy format
 DATE_VALUE=$(date +"%d/%m/%Y")
 
@@ -13,7 +16,9 @@ echo "Branch name: $BRANCH_NAME"
 git add .
 
 # Commit with date as message
-git commit -m "$DATE_VALUE"
+git commit -m "$DATE_VALUE
+$COMMIT_MESSAGE
+"
 
 # Push to branch with date name
 git push origin $BRANCH_NAME
