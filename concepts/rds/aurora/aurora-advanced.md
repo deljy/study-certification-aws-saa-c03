@@ -6,7 +6,7 @@ short explanation comes here
 - used to create a custom endpoint which helps you group instances into a subset
 - helpful when you have different kinds of Aurora instances (like ones for analytical queries, and the others for normal read ops)
 #### Aurora Serverless
-- automated database instantiation and auto-scaling based on actual usage
+- automated database instantiation and **auto-scaling based on actual usage**
 - good for infrequent, intermittent or unpredectable workloads
 - no capacity planning is needed
 - pay per second, which can be more cost-effective
