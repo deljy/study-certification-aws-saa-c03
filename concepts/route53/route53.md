@@ -11,11 +11,48 @@ A highly available, scalable, fully managed and *Authoritative* DNS
 - is the only AWS service which provides 100% availability SLA (Service Level Agreement)
 - 53 is a reference to the tranditional DNS port
 
-#### route
+#### Hosted Zones
+- which seems equiv of [zone files][zone-file] in Domain Name System
+- read more about [zone files](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/4/html/reference_guide/s2-bind-zone-examples)
+- you pay $0.50 per month per hosted zone
 
-### Terms
-#### [displayed-link-name][your-link-name]
+#### DNS/Route53 Record
+- purpose:
+    - define how to route traffic for your domain
+- feature:
+    - domain/subdomain name e.g., example.com
+    - [record type][record-types]
+    - value:
+        - target desination (ip address or another dns name)
+    - routing policy:
+        - how route 53 responds to queries
+    - [TTL(Time To Live)](#time-to-live)
+
+#### TTL(Time To Live):
+- lifetime for cache that your DNS client has for DNS record from your DNS server.
+- amount of time the record cached at DNS resovlers
+- in other words, the amount of time (usually in seconds) that DNS resolvers cache a record before checking for updates (= sending queries to DNS servers).
+- Lower TTL = more frequent updates; higher TTL = more cahcing.
+- example:
+    - while the cached record is alive (still in TTL), it won't try to look up a new DNS record even if the dns server had made a change in its DNS record.
+
+#### checking DNS Records
+```bash
+DOMAIN_NAME=example.com
+dig $DOMAIN_NAME
+
+# or use ```nslookup $DOMAIN_NAME```
+```
+
+#### Zone Apex (Apex, apex level, and so on)
+- the root of a DNS zone — the domain name without any subdomain.
+- e.g., For example.com, the zone apex is example.com (not www.example.com or api.example.com).
+
+#### DNS Resovlers
+- They are servers (usually run by ISPs or public DNS providers like Google or Cloudflare) that take a domain name and find its IP address by querying other DNS servers. They cache responses based on TTL.
 
 ### References
 [authoritative DNS server]: ./dns.md
+[zone-file]: ../../static/examples/zonefile.example
+[record-types]: ./route53-general/route53-records.md
 ![your-img-name](your/image/path)
