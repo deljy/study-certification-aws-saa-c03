@@ -12,7 +12,7 @@ short explanation comes here
         - read replica allows *"SELECT" query only*.
         - Data transfer between mutli AZs within the same region is free (*No network cost*).
         - Data transfer across multiple regions incurs a replication fee for the network.
-        - Read replica of a database can be *promoted/upgraded* to a standalone-database/writable-instance.
+        - Read replica of a database can be **promoted/upgraded to a standalone-database/writable-instance**.
         - Not automatically failover targets.
     - Use cases:
         - Offload read traffic
