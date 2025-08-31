@@ -1,5 +1,16 @@
 This markdown includes answers I got wrong or wasn’t sure about.
 
+<<<<<<< HEAD
+### questionN
+description
+
+- Options:
+    -
+- Answer:
+    -
+- Explanation:
+    -
+=======
 ### question6
 You would like to encrypt an unencrypted EBS volume attached to your EC2 instance. What should you do?
 
@@ -50,3 +61,4 @@ You are running a high-performance database that requires an IOPS of 310,000 for
     - Use an EBS io2 block express drive
 
 - Explanation: You can run a database on an EC2 instance that uses an Instance Store, but you'll have a problem that the data will be lost if the EC2 instance is stopped (it can be restarted without problems). One solution is that you can set up a replication mechanism on another EC2 instance with an Instance Store to have a standby copy. Another solution is to set up backup mechanisms for your data. It's all up to you how you want to set up your architecture to validate your requirements. In this use case, it's around IOPS, so we have to choose an EC2 Instance Store.
+>>>>>>> f831c957e969f25fcc9c688cfe684602503f7477
