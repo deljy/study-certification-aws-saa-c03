@@ -13,6 +13,7 @@ short explanation comes here
     - read more about [difference between alias records and CNAME records][route53-cname-vs-alias]
 - NS: 
     - target value: name servers for the hosted zone
+    - An NS (Name Server) record specifies the authoritative DNS servers for a domain. These servers answer queries about that domain.
 
 
 ### References
