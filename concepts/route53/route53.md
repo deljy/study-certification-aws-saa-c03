@@ -48,8 +48,16 @@ dig $DOMAIN_NAME
 - the root of a DNS zone — the domain name without any subdomain.
 - e.g., For example.com, the zone apex is example.com (not www.example.com or api.example.com).
 
-#### DNS Resovlers
+#### DNS Resolvers
 - They are servers (usually run by ISPs or public DNS providers like Google or Cloudflare) that take a domain name and find its IP address by querying other DNS servers. They cache responses based on TTL.
+
+#### Route53 Resolver Endpoint
+- It's a customizable DNS endpoint in AWS Route 53 that lets your on-premises network resolve DNS names in AWS (inbound) or lets AWS resources resolve names in your on-premises network (outbound).
+
+#### Hybrid DNS
+- Hybrid DNS combines on-premises DNS (like Microsoft AD DNS) with cloud DNS (like Route 53) to allow name resolution across both environments. It's common in hybrid cloud setups.
+- Example:
+    - A company runs applications partly on-premises and partly in AWS. Their internal apps use on-prem DNS, but cloud apps use Route 53. Hybrid DNS lets users seamlessly access both on-prem and cloud resources by resolving names across both DNS systems.
 
 ### References
 [authoritative DNS server]: ./dns.md

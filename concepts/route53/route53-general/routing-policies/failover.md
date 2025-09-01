@@ -1,9 +1,9 @@
-## ServiceName
-short explanation comes here
+## Failover Routing Policy
+a type of routing policies that Route53's record can have
 
 ### Features
-#### feature1
-- description
+#### general
+- allows the record to have a secondary target in order to failover for the primary target in response to health check failure.
 
 
 ### References

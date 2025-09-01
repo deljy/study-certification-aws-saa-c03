@@ -31,6 +31,10 @@ DNS (Domain Name System) translates human-readable domain/host names (like examp
         - ************www.example.com. // Sub Domain
         - ********api.www.example.com. // FQDN (Fully Qualified Domain Name)
         - https**********************. // Protocol
+- Domain registrar vs DNS service provider
+    - example: you can buy your domain name from "goDaddy" as your domain registrar, and then register/replace the dns server's NS record with the goDaddy's NS record.
+- NS record:
+    - An NS (Name Server) record specifies the authoritative DNS servers for a domain. These servers answer queries about that domain.
 
 ### Terms
 #### Zone File vs Hosted Zone in Route 53
