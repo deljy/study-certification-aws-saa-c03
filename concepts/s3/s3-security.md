@@ -12,8 +12,8 @@ short explanation comes here
 
 #### notes
 - an IAM principal can access an s3 object if
-    - the user IAM permissions ALLOW if OR the resource policy ALLOWs it
-    - AND there's no explict DENY
+    - the user IAM permissions ALLOW it **||** the resource policy ALLOWs it
+    - **&&** there's no explict DENY
 - encryption
     - can encrypt objects using encryption keys
 

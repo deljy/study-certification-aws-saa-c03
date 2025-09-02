@@ -22,11 +22,16 @@ short explanation comes here
 - [amazon s3 glacier][glacier]
 - [amazon s3 intelligent tiering][intelligent-tiering]
 
+#### [Lifecycle Rules][lifecycle-rules]
+
 ### References
 [aws storage classes](https://aws.amazon.com/s3/storage-classes/)
+[lifecycle-transition](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-transition-general-considerations.html)
 
-[general-purpose]: ./general-purpose.md
-[infrequent-access]: ./infrequent-access.md
-[glacier]: ./glacier.md
-[intelligent-tiering]: ./intelligent-tiering.md
-![your-img-name](your/image/path)
+[general-purpose]: ./s3-storage-classes/general-purpose.md
+[infrequent-access]: ./s3-storage-classes/infrequent-access.md
+[glacier]: ./s3-storage-classes/glacier.md
+[intelligent-tiering]: ./s3-storage-classes/intelligent-tiering.md
+[lifecycle-rules]: ./s3-lifecycle-rules.md
+
+![storage-classes](../../static/img/s3-storage-classes.png)

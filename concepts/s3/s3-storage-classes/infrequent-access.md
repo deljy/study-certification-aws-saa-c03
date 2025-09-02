@@ -8,12 +8,16 @@ short explanation comes here
 
 #### amazon s3 standard - infrequent access (IA)
 - 99.9% availability
-- use cases: disaster recovery, backups
+- use cases:
+    - disaster recovery
+    - backups
 
 #### amazon s3 one zone - infrequent access (One Zone-IA)
 - high durability (99.999999999%) in a single AZ; data lost when AZ is destroyed
 - 99.5% availability
-- use cases: storing escondary backup copies of on-premises data, or data you can re-create
+- use cases:
+    - storing secondary backup copies of on-premises data
+    - data you can re-create
 
 
 ### References
