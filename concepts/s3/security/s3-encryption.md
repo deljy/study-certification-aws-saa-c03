@@ -13,13 +13,13 @@ short explanation comes here
 - Encryption S3 objects using keys handled, managed, and owned by AWS (enabled by default)
 - object is encrypted in server-side
 - encryption type/algorithm is AES-256
-- must set header called "x-amz-server-side-encryption": "AES256"
+- **must set header called** "x-amz-server-side-encryption": "AES256"
 - enabled by default for new buckets and new objects 
 
 #### SSE wth KMS Keys stored in AWS KMS (SSE-KMS)
 - leverage AWS key management service (AWS KMS) to manage encryption keys
 - object is encrypted in server-side
-- must set header called "x-amz-server-side-encryption": "aws:kms"
+- **must set header called** "x-amz-server-side-encryption": "aws:kms"
 - advantages:
     - user control
     - audit key usage using CloudTrail (logging usage of key)
@@ -41,6 +41,14 @@ short explanation comes here
 #### Client-Side Encryption
 - encryption/decryption happens in client side.
 - by doing that, clients can manage their encryption cycles.
+
+#### default encryption vs bucket policy
+- default encryption (SSE-S3)
+    - SSE-S3 is going to be automatically applied to new objects to your bucket
+- bucket policy
+    - optional
+    - you can preemptively apply this on top of your default encryption
+    - you can explicitly reject/deny requests without encryption header by setting up this. 
 
 #### About encryption in flight/transit (SSL/TLS)
 - encryption in flight/transit is also called SSL/TLS
