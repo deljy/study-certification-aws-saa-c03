@@ -3,7 +3,7 @@ short explanation comes here
 
 ### Features
 #### general
-- you can restrict who can access your distribution
+- you can restrict who can access your distribution based on request's geo location information
 - allowlist:
     - allow your users to access your content only if they're in one of the countries on a list of approved countries. 
 - blocklist:
