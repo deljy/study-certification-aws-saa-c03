@@ -20,6 +20,7 @@ types of storage gateway:
     - [S3 File Gateway](#s3-file-gateway)
     - [volume Gateway](#volume-gateway)
     - [Tape Gateway](#tape-gateway)
+
 #### Summary
 - user/Groupo file shares will be linked through File Gateway (storage gateway) on NFS/SMB protocols while encrypted in transit to the aws cloud environment from the on-premises environment. then, the files will be stored on S3 buckets except for under-glacier classes. however, files can be transitioned to under-glacier classes with bucket life policy. 
 - application server's block will be linked to amazon s3 through volume gateway (storage gateway) on iSCSI protocol while encrypted in transit/flight. then, the data will be transformed into EBS volume

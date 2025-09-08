@@ -24,6 +24,17 @@
     - for edge computing like on a truck on the road, a ship on the sea, a mining station underground which have limited internet access and computing power. by setting up a snowball edge device, you can achieve edge computing for pre-processing data, machine leanring, and transscoding media.
 - in order to import data into S3 glacier, you must insert the data into s3 bucket with an S3 lifecycle policy
 
+#### Comparison between Snowcone and Snowball Edge
+| Feature       | **Snowcone**                            | **Snowball Edge**                          |
+| ------------- | --------------------------------------- | ------------------------------------------ |
+| **Size**      | Small, portable (8.8 lbs / \~4 kg)      | Larger, heavier (50+ lbs / \~23 kg)        |
+| **Storage**   | \~8 TB usable                           | 42–80 TB usable                            |
+| **Compute**   | Limited (2 vCPUs)                       | More powerful (up to 52 vCPUs, GPU option) |
+| **Power**     | Can run on battery or DC                | Requires AC power                          |
+| **Use Cases** | Edge data collection, IoT, portable use | Large-scale migration, edge computing      |
+| **Network**   | Wi-Fi or wired                          | Wired only                                 |
+
+
 ### References
 [your-link-name]: your/file/path
 ![your-img-name](your/image/path)

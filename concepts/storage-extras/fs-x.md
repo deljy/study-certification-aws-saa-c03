@@ -89,6 +89,14 @@ Launch your file system on AWS as a fully managed service, like RDS but for File
     - can write the output of the computations back to s3 (through FSx)
 can be used from on-premises servers (VPN or Direct Connect)
 
+#### Comparison between FSx Lustre and EFS
+| Feature               | **Amazon FSx for Lustre**                         | **EFS with Max I/O**                     |
+| --------------------- | ------------------------------------------------- | ---------------------------------------- |
+| **IOPS performance**  | Scales to **millions of IOPS**                    | Good, but not millions; less predictable |
+| **Latency**           | **Sub-millisecond latency**                       | Higher latency (\~ms level)              |
+| **Designed for HPC?** | ✅ **Yes** – built for HPC, ML, genomics workloads | ❌ No – general purpose                   |
+| **POSIX compliant?**  | ✅ Yes                                             | ✅ Yes                                    |
+
 
 
 ### References
