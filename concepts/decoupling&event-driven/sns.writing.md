@@ -1,9 +1,9 @@
-## ServiceName
-short explanation comes here
+## Amazon SNS
+creating topic and attach listeners(subscribers) to it, and publish your event to them.
 
 ### Features
 #### general
-- description
+- is a serverless pub/sub service
 
 
 ### References

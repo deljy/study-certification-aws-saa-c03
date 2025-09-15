@@ -1,9 +1,12 @@
-## ServiceName
-short explanation comes here
+## Amazon SQS
+serverless queue
 
 ### Features
 #### general
-- description
+- has
+    - general queue
+    - FIFO queue
+- can be a subscriber to SNS topic
 
 
 ### References

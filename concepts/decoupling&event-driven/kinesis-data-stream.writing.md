@@ -1,9 +1,10 @@
-## ServiceName
-short explanation comes here
+## Amazon Kinesis
+Easily stream data at any scale
 
 ### Features
 #### general
-- description
+- serverless
+- 
 
 
 ### References
